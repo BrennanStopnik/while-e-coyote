@@ -13,12 +13,22 @@ Enter a number:
 
 const prompt = require("prompt-sync")({sigint: true});
 
-let number = Number(prompt("Enter a number under 100: "));
+// let var1 = true;
+// let num = 0;
+let num = Number(prompt("Enter a number under 100: "));
  
-let sum = 0;
-while (number <= 100) {
-    console.log(number);
-    number = number*2
-}
 
-console.log(sum)
+// while (var1 === true) {
+//     num = num * 2;
+//     if (num <= 100) {
+//         console.log(num);
+//     } else if (num > 100) {
+//         var1 = false;
+//         console.log(num);
+//     }
+// }
+
+while (num < 100) {
+    num = num * 2;
+    console.log(num)
+}
