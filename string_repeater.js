@@ -24,3 +24,12 @@ aaaaaaaaa
 aaaaaaaaaa
 */
 
+const prompt = require('prompt-sync')({sigint: true});
+
+let final = "";
+let in_str = prompt("Enter a string: ");
+
+while (final.length < 10) {
+    final = in_str + final;
+    console.log(final);
+}
