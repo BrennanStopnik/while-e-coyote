@@ -22,5 +22,23 @@ Enter a value for "n":
 ```
 */
 
+const prompt = require("prompt-sync")({sigint: true});
 
-// Need 2 Variable to keep track of each of the 2 number that are going to get added.
+let n = Number(prompt("enter a value for 'n': "));
+
+let prev = 0;
+let curr = 1;
+let tot = 0; 
+
+console.log(prev);
+let count = 1;
+
+while (count < n) {
+    
+    console.log(curr)
+    tot = prev + curr;
+    prev = curr;
+    curr = tot
+
+    count++;
+}
